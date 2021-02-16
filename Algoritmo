@@ -1,0 +1,23 @@
+Sí esta soltero 
+Entonces Preguntar Edad 
+Sí edad está entre 18 y 24 
+Entonces aplica el 10%
+Sí edad está entre 25 y 49 
+Entonces aplica el 20%
+Sí es mayor o igual a 50 
+Entonces 30%
+Si no está soltero 
+Entonces qué edad tiene su conyuge
+Sí edad conyuge está entre 18 y 24 
+Entonces aplica el 10%
+Sí edad conyuge está entre 25 y 49 
+Entonces aplica el 20%
+Sí es mayor o igual a 50 
+Entonces 30%
+Sí tiene hijos 
+Entonces cuantos hijos tiene? 
+Cantidad de Hijos multiplicado por 20% por la Base
+Si no tiene hijos entonces nada.
+
+Output
+Resumen de la cotización
