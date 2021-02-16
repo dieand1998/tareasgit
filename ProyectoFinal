@@ -1,0 +1,52 @@
+var Nombre=prompt("Escriba su nombre:")
+var Edad=prompt("Ingresa tu edad actual")
+
+   if(Edad>=18 && Edad<=24){      
+     var PrecioBase=2000
+      var Asegurado1=PrecioBase*0.1
+        }else   if(Edad>=25 && Edad<=49){      
+         var PrecioBase=2000
+            var Asegurado1=PrecioBase*0.2
+                  }else   if(Edad>=50){      
+                     var PrecioBase=2000
+                        var Asegurado1=PrecioBase*0.3
+                  }  
+
+
+
+alert("¿Cuál es su estado civil?")
+
+alert("Sí esta soltero: S & sí esta casado: C")
+var Estado=prompt("¿Estado civil? S / C")
+var Casado="C"
+var Soltero="S"
+
+  if(Estado==Soltero || Estado=="s"){
+var Total=Asegurado1 + PrecioBase
+alert("Estimado asegurado " + Nombre + ", los cargos extras son: Q" + Asegurado1 + " Base imponible: Q" + PrecioBase + " Dando un total de: Q" +Total)
+}else if(Estado==Casado || Estado=="c" ){
+  var Conyuge=prompt("Escriba el nombre de su conyuge:")
+  var Edad2=prompt("Ingresa la edad actual de su conyuge")
+  var Hijos=prompt("¿Tiene hijos? Si/No");
+  
+  if(Edad>=18 && Edad<=24){      
+     var PrecioBase=2000
+      var Asegurado2=PrecioBase*0.1
+        }else   if(Edad2>=25 && Edad2<=49){      
+         var PrecioBase=2000
+            var Asegurado2=PrecioBase*0.2
+                  }else   if(Edad2>=50){      
+                     var PrecioBase=2000
+                        var Asegurado2=PrecioBase*0.3
+                  }                           
+  
+  if(Hijos=="Si" || Hijos=="si"){
+       var CantidadHijos=prompt("¿Cuántos hijos tiene?")
+       var TotalHijos= PrecioBase * CantidadHijos * 0.20
+       var Total=Asegurado1 + Asegurado2 + PrecioBase + TotalHijos
+        alert("Estimado asegurado " + Nombre + ", los cargos extras son asegurado: Q" + Asegurado1 + " cargos extras conyugue: Q"+ Asegurado2+ " cargos extras por hijos: Q" + TotalHijos + " Base imponible: Q" + PrecioBase + " Dando un total de: Q" +Total)
+}else{
+var Total=Asegurado1 + Asegurado2 + PrecioBase
+alert("Estimado asegurado " + Nombre + ", los cargos extras son asegurado: Q" + Asegurado1 + " cargos extras conyugue: Q"+ Asegurado2 +" Base imponible: Q" + PrecioBase + " Dando un total de: Q" +Total)  
+  }
+}
